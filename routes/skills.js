@@ -8,5 +8,5 @@ var skillsCtrl = require('../controllers/skills');
 // All actual paths start with "/skills" but don't show explicitly in this router file
 // Read all skills: GET /skills   index
 router.get('/', skillsCtrl.index)
-
+router.get('/:id', skillsCtrl.show)
 module.exports = router;

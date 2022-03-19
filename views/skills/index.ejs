@@ -14,9 +14,11 @@
     <ul>
         <% skills.forEach((skill)=> { %>
             <li>
-                <%= skill.skill %>
-                    -
-                    <%= skill.competent ? 'very good' : 'very bad' %>
+                <a href="/skills/<%= skill.id %>">
+                    <%= skill.skill %>
+                </a>
+                -
+                <%= skill.competent ? 'very good' : 'very bad' %>
             </li>
             <% }); %>
     </ul>
